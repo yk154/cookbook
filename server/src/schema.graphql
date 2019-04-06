@@ -1,0 +1,47 @@
+# import * from "./generated/prisma.graphql"
+scalar Upload
+
+type Query {
+  me: User!
+  recipes(where: RecipeWhereInput): [Recipe]!
+  likedrecipes: [Recipe]!
+  allrecipes: [Recipe]!
+  ingredients(where: IngredientWhereInput): [Ingredient!]!
+  likes(where: LikeWhereInput): [Like!]!
+  recipe(where: RecipeWhereUniqueInput!): Recipe
+}
+
+type Mutation {
+  signup(
+    email: String!
+    password: String!
+    name: String!
+    username: String!
+  ): AuthPayload!
+  login(email: String!, password: String!): AuthPayload!
+  createrecipe(data: RecipeCreateInput!, picture: Upload): Recipe!
+  commentRecipe(text: String!, name: String!): Recipe!
+  likerecipe(name: String!): Recipe!
+  unlikerecipe(name: String!): Like!
+}
+
+type AuthPayload {
+  token: String!
+  user: User!
+}
+
+type Ingredient {
+  id: ID!
+  price: Float!
+  name: String!
+}
+
+type User {
+  id: ID!
+  email: String!
+  username: String!
+  name: String!
+  password: String!
+  recipes: [Recipe]!
+  likes: [Like!]!
+}

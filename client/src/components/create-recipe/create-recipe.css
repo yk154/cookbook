@@ -1,0 +1,91 @@
+h1 {
+  width: 100%;
+  padding: 20px;
+  font-family: Montserrat;
+  color: #f0e7d8;
+  background: firebrick;
+}
+#recipe-title {
+  padding: 10px;
+  margin: 10px;
+  width: 500px;
+  text-align: center;
+}
+
+#description {
+  margin: 10px;
+  padding: 10px;
+  width: 500px;
+  text-align: center;
+}
+
+#price {
+  padding: 10px;
+  margin: 10px;
+  width: 500px;
+  text-align: center;
+}
+
+.steps {
+  padding: 10px;
+}
+
+#step {
+  width: 500px;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  resize: none;
+  text-align: center;
+  margin: 10px;
+}
+
+#nutrition {
+  padding: 10px;
+  margin: 10px;
+  width: 500px;
+  text-align: center;
+}
+
+.css-1rtrksz {
+  padding: 0px;
+  background: white;
+  height: 50px;
+}
+
+.category {
+  display: flex;
+  justify-content: center;
+}
+
+#category {
+  padding: 10px;
+  margin: 10px;
+  width: 525px;
+  font-family: Montserrat;
+}
+
+button {
+  padding: 15px;
+  font-family: Montserrat;
+  background-color: firebrick;
+  color: white;
+  width: 100%;
+}
+
+::placeholder {
+  font-family: Montserrat;
+  color: #ab9b96;
+}
+
+input[type="textarea"] {
+  font-family: Montserrat;
+  color: #928380;
+}
+
+#ingredients {
+  padding: 10px;
+  margin: 10px;
+  width: 500px;
+  text-align: center;
+}
