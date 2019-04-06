@@ -217,32 +217,28 @@ class Navigation extends React.Component {
                                 }
                               }}
                             >
-                              <div className="inputBox">
+                              <div className="inputBox text-center">
                                 <DropdownItem disabled id="warning">
                                   {this.state.error}
                                 </DropdownItem>
-                                <DropdownItem disabled>email:</DropdownItem>
-                                <DropdownItem disabled>
-                                  <input
-                                    type="text"
-                                    className="abc"
-                                    onChange={e => {
-                                      this.setState({ email: e.target.value })
-                                    }}
-                                  />
-                                </DropdownItem>
+                                <DropdownItem disabled>Email:</DropdownItem> 
+                                <input
+                                  type="text"
+                                  className="abc"
+                                  onChange={e => {
+                                    this.setState({ email: e.target.value })
+                                  }}
+                                />
 
-                                <DropdownItem disabled>password:</DropdownItem>
-                                <DropdownItem disabled>
-                                  <input
-                                    type="text"
-                                    onChange={e => {
-                                      this.setState({
-                                        password: e.target.value
-                                      })
-                                    }}
-                                  />
-                                </DropdownItem>
+                                <DropdownItem disabled>Password:</DropdownItem>
+                                <input
+                                  type="text"
+                                  onChange={e => {
+                                    this.setState({
+                                      password: e.target.value
+                                    })
+                                  }}
+                                />
                               </div>
                               <DropdownItem divider />
                               <DropdownItem>
